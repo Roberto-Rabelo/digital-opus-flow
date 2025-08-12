@@ -6,6 +6,7 @@ const navItems = [
   { href: "#projetos", label: "Projetos" },
   { href: "#skills", label: "Skills" },
   { href: "#experiencia", label: "Experiência" },
+  { href: "#contato", label: "Contato" },
 ];
 
 const SiteHeader = () => {

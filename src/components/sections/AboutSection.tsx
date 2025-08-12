@@ -42,6 +42,9 @@ const AboutSection = () => {
           <Button variant="outline" size="lg" asChild>
             <a href="#experiencia">Experiência</a>
           </Button>
+          <Button variant="subtle" size="lg" asChild>
+            <a href="/curriculo.pdf" download aria-label="Baixar currículo em PDF">Baixar currículo</a>
+          </Button>
         </div>
       </div>
     </section>
