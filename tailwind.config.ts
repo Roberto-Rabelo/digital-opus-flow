@@ -63,6 +63,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			fontFamily: {
+				sans: ["Plus Jakarta Sans", "ui-sans-serif", "system-ui"],
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
