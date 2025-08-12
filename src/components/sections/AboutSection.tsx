@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { useI18n } from "@/i18n";
 
 const AboutSection = () => {
+  const { t } = useI18n();
   // Signature interaction: spotlight following cursor
   const onMouseMove: React.MouseEventHandler<HTMLDivElement> = (e) => {
     const target = e.currentTarget;
@@ -26,24 +28,23 @@ const AboutSection = () => {
           }}
         />
         <p className="text-xs uppercase tracking-widest text-muted-foreground mb-3">
-          Portfólio
+          {t("about.portfolio")}
         </p>
         <h1 id="sobre-title" className="text-3xl md:text-5xl font-extrabold leading-tight">
-          Desenvolvedor(a) Full Stack C#
+          {t("about.title")}
         </h1>
         <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-2xl">
-          Crio soluções escaláveis com .NET, ASP.NET Core, Entity Framework, Angular e Azure. Foco em qualidade,
-          performance e boas práticas (Clean Architecture, CI/CD e testes automatizados).
+          {t("about.description")}
         </p>
         <div className="mt-6 flex flex-col sm:flex-row gap-3">
           <Button variant="hero" size="lg" asChild>
-            <a href="#projetos">Ver projetos</a>
+            <a href="#projetos">{t("about.btn.projects")}</a>
           </Button>
           <Button variant="outline" size="lg" asChild>
-            <a href="#experiencia">Experiência</a>
+            <a href="#experiencia">{t("about.btn.experience")}</a>
           </Button>
           <Button variant="subtle" size="lg" asChild>
-            <a href="/curriculo.pdf" download aria-label="Baixar currículo em PDF">Baixar currículo</a>
+            <a href="/curriculo.pdf" download aria-label="Baixar currículo em PDF">{t("about.btn.download")}</a>
           </Button>
         </div>
       </div>
